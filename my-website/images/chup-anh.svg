@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
+<defs>
+ <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#FBE8DC"/><stop offset="1" stop-color="#DCEAE7"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#173548" flood-opacity=".14"/></filter>
+ <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#176C70" opacity=".12"/></pattern>
+</defs>
+<rect width="800" height="600" fill="url(#g)"/>
+<circle cx="725" cy="70" r="170" fill="#FFFFFF" opacity=".34"/>
+<circle cx="95" cy="510" r="180" fill="#FFFFFF" opacity=".24"/>
+<rect x="30" y="30" width="740" height="540" rx="38" fill="url(#dots)"/>
+
+<ellipse cx="399" cy="488" rx="260" ry="31" fill="#174D63" opacity=".12"/>
+<g filter="url(#shadow)"><rect x="139" y="179" width="528" height="291" rx="38" fill="#1A465A"/><rect x="219" y="142" width="155" height="56" rx="15" fill="#1A465A"/>
+<rect x="506" y="149" width="84" height="45" rx="11" fill="#F3AE8F"/><circle cx="403" cy="329" r="122" fill="#F6D9B9"/><circle cx="403" cy="329" r="101" fill="#276D73"/><circle cx="403" cy="329" r="75" fill="#4E91A0"/><circle cx="403" cy="329" r="52" fill="#193D53"/><circle cx="389" cy="303" r="19" fill="#fff" opacity=".56"/>
+<circle cx="590" cy="244" r="14" fill="#F2C18D"/></g>
+<path d="M128 109l14 33 33 14-33 14-14 33-14-33-33-14 33-14z" fill="#E8AE84"/>
+
+</svg>

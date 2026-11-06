@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
+<defs>
+ <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#DBEEEC"/><stop offset="1" stop-color="#F8E6DD"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#173548" flood-opacity=".14"/></filter>
+ <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#176C70" opacity=".12"/></pattern>
+</defs>
+<rect width="800" height="600" fill="url(#g)"/>
+<circle cx="725" cy="70" r="170" fill="#FFFFFF" opacity=".34"/>
+<circle cx="95" cy="510" r="180" fill="#FFFFFF" opacity=".24"/>
+<rect x="30" y="30" width="740" height="540" rx="38" fill="url(#dots)"/>
+
+<ellipse cx="405" cy="490" rx="270" ry="30" fill="#145960" opacity=".11"/>
+<g filter="url(#shadow)"><rect x="149" y="142" width="493" height="290" rx="30" fill="#FFFDF8"/><path d="M194 383h407" stroke="#CEDDDC" stroke-width="8" stroke-linecap="round"/>
+<rect x="214" y="303" width="71" height="80" rx="11" fill="#F0AD8C"/><rect x="315" y="252" width="71" height="131" rx="11" fill="#95C4B7"/><rect x="416" y="207" width="71" height="176" rx="11" fill="#296E74"/><path d="m220 241 87-52 74 16 109-62" fill="none" stroke="#D99C78" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m464 142 29-1-8 26" fill="none" stroke="#D99C78" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(539 308)"><circle cx="43" cy="43" r="62" fill="#F6CFAB"/><path d="M17 44l17 17 36-39" stroke="#1D6C71" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+
+</svg>

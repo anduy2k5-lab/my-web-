@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
+<defs>
+ <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#E6EBF8"/><stop offset="1" stop-color="#F9E6DA"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#173548" flood-opacity=".14"/></filter>
+ <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#176C70" opacity=".12"/></pattern>
+</defs>
+<rect width="800" height="600" fill="url(#g)"/>
+<circle cx="725" cy="70" r="170" fill="#FFFFFF" opacity=".34"/>
+<circle cx="95" cy="510" r="180" fill="#FFFFFF" opacity=".24"/>
+<rect x="30" y="30" width="740" height="540" rx="38" fill="url(#dots)"/>
+
+<ellipse cx="408" cy="496" rx="268" ry="36" fill="#145960" opacity=".12"/>
+<g filter="url(#shadow)"><rect x="176" y="147" width="446" height="308" rx="45" fill="#173C53"/><rect x="204" y="179" width="389" height="245" rx="30" fill="#24596B"/>
+<circle cx="401" cy="301" r="107" fill="#F4B58C"/><circle cx="401" cy="301" r="85" fill="#FDE8D8"/><circle cx="401" cy="301" r="19" fill="#173C53"/>
+<path d="M250 370c28-23 38-37 49-71M529 238c-28-20-40-34-51-62" stroke="#F8D4B7" stroke-width="13" stroke-linecap="round"/>
+<path d="M270 252V186l51-13v71" fill="none" stroke="#F5C59F" stroke-width="13" stroke-linecap="round"/><ellipse cx="259" cy="255" rx="21" ry="14" fill="#F5C59F"/><ellipse cx="309" cy="244" rx="21" ry="14" fill="#F5C59F"/>
+</g>
+<path d="m666 122 10-30 10 30 28 10-28 10-10 30-10-30-28-10z" fill="#E3A86A"/>
+
+</svg>

@@ -1,0 +1,140 @@
+/* NGUYỄN DUY AN - CSS CHUNG CHO 3 TRANG */
+:root {
+  --navy: #18364b;
+  --navy-deep: #102738;
+  --teal: #116c6a;
+  --teal-dark: #0c5355;
+  --ink: #253d4e;
+  --muted: #52687a;
+  --paper: #faf9f6;
+  --cream: #f3f5f1;
+  --white: #ffffff;
+  --line: #d7e4e2;
+  --peach: #f8e5da;
+  --shadow: 0 20px 60px rgba(27, 54, 69, .08);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; line-height: 1.65; color: var(--ink); background: var(--paper); }
+
+/* 2. SKIP TO MAIN CONTENT: an binh thuong, chi hien khi focus bang Tab */
+.skip-link { position: absolute; top: -100px; left: 14px; z-index: 1000; padding: 12px 18px; background: var(--navy-deep); color: white; border-radius: 8px; font-weight: 700; }
+.skip-link:focus { position: absolute; top: 12px; left: 14px; outline: 3px solid #f4b47a; outline-offset: 3px; }
+
+/* 3 + 6. NAVIGATION dung Flex va nhieu thuoc tinh CSS */
+.site-header { background: rgba(255,255,255,.98); border-bottom: 1px solid var(--line); }
+.container { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 86px; }
+.brand { text-decoration: none; display: inline-block; color: var(--navy-deep); font-family: "Times New Roman", Georgia, serif; font-size: clamp(1.55rem, 2vw, 1.95rem); font-weight: 700; font-style: italic; letter-spacing: -.025em; line-height: 1.2; padding-bottom: 4px; border-bottom: 2px solid var(--teal-dark); transition: color .25s ease, border-color .25s ease; }
+.brand:hover { color: var(--teal-dark); border-color: var(--navy-deep); }
+.nav-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.nav-list a { display: block; text-decoration: none; color: var(--navy); padding: 10px 17px; font-weight: 700; border-radius: 999px; transition: color .25s ease, background .25s ease, transform .25s ease; }
+.nav-list a:hover { color: white; background: var(--teal-dark); transform: translateY(-2px); }
+.nav-list a[aria-current="page"] { color: white; background: var(--navy); }
+a:focus-visible { outline: 3px solid #c27a2e; outline-offset: 4px; }
+
+/* TYPOGRAPHY + HERO */
+h1, h2, h3 { color: var(--navy-deep); line-height: 1.18; margin-top: 0; }
+h1, h2 { font-family: "Times New Roman", Georgia, serif; letter-spacing: -.036em; }
+h1 { font-size: clamp(2.7rem, 5.3vw, 4.65rem); margin-bottom: 22px; }
+h2 { font-size: clamp(2rem, 3.5vw, 3rem); margin-bottom: 16px; }
+h3 { font-size: 1.26rem; margin-bottom: 8px; }
+p { margin: 0 0 16px; }
+.eyebrow { margin-bottom: 16px; color: var(--teal-dark); text-transform: uppercase; font-size: .79rem; font-weight: 800; letter-spacing: .14em; }
+.lead { font-size: 1.15rem; color: var(--muted); max-width: 620px; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.06fr) minmax(0, .94fr); gap: clamp(28px, 5vw, 70px); align-items: center; padding-block: 76px 84px; }
+.hero-copy { max-width: 590px; }
+.hero-art { background: #e2f0ec; padding: 15px; border-radius: 32px; box-shadow: var(--shadow); }
+/* 4. Box model: TAT CA anh deu co border, padding, border-radius */
+img { display: block; width: 100%; height: auto; border: 3px solid #e0e9e7; padding: 6px; border-radius: 22px; background: #ffffff; }
+.hero-art img { border-color: #d8e7e3; border-radius: 25px; }
+
+/* Ảnh cá nhân do học viên cung cấp: giữ nguyên file JPG, tỉ lệ và màu sắc gốc */
+.hero-photo { width: 100%; max-width: 440px; justify-self: end; margin: 0; padding: 12px; }
+.hero-photo img { width: 100%; height: auto; display: block; object-fit: contain; border-color: #d8e7e3; border-radius: 25px; }
+.hero-photo figcaption { text-align: center; font-size: .9rem; font-weight: 600; color: var(--muted); padding: 12px 4px 2px; }
+
+.button-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+.button { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; padding: 13px 22px; border-radius: 12px; font-weight: 800; transition: transform .25s ease, background .25s ease, box-shadow .25s ease; }
+.button:hover { transform: translateY(-3px); box-shadow: 0 12px 20px rgba(16,39,56,.13); }
+.button-primary { background: var(--teal-dark); color: white; }
+.button-primary:hover { background: var(--navy); }
+.button-secondary { color: var(--navy); background: white; border: 1px solid #b8cfcb; }
+.button-secondary:hover { background: #eaf3f1; }
+.mini-info { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 25px; }
+.mini-info span { font-size: .9rem; color: #37596b; background: #e8f2ee; padding: 5px 12px; border-radius: 999px; }
+.section { padding-block: 70px; }
+.section-alt { background: var(--cream); }
+.section-intro { max-width: 700px; margin-bottom: 35px; }
+.section-intro.center { text-align: center; margin-inline: auto; }
+
+/* 5. GRID voi >= 2 cot */
+.feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.feature-card, .goal-card, .gallery-card { background: white; border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 8px 26px rgba(20,53,73,.035); }
+.feature-card { padding: 26px; }
+.feature-number { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #def0e9; border-radius: 13px; color: var(--teal-dark); font-weight: 800; margin-bottom: 17px; }
+.feature-card p, .goal-card p { color: var(--muted); margin-bottom: 0; }
+.quote-strip { display: flex; align-items: center; gap: 18px; padding: 29px 32px; border-left: 5px solid var(--teal-dark); border-radius: 0 17px 17px 0; background: #edf5f1; margin-block: 30px 0; }
+.quote-strip p { margin: 0; color: var(--navy); font-family: "Segoe UI", Arial, sans-serif; font-size: 1.3rem; letter-spacing: normal; }
+.page-heading { padding-block: 68px 30px; max-width: 850px; }
+.page-heading h1 { font-size: clamp(2.45rem, 4.8vw, 4.3rem); }
+.page-heading .lead { max-width: 770px; }
+
+/* 5. Gallery GRID: 3 cot tren man hinh rong, 2 cot tren tablet */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding-bottom: 70px; }
+.gallery-card { overflow: hidden; transition: transform .3s ease, box-shadow .3s ease; }
+/* 7. Hieu ung hover */
+.gallery-card:hover { transform: translateY(-7px); box-shadow: var(--shadow); }
+.gallery-picture { padding: 14px 14px 0; }
+.gallery-card img { aspect-ratio: 4/3; object-fit: cover; transition: transform .3s ease; }
+.gallery-card:hover img { transform: scale(1.025); }
+/* 8. nth-child: anh chan/le co goc bo khac nhau */
+.gallery-card:nth-child(odd) img { border-radius: 16px 42px 16px 42px; }
+.gallery-card:nth-child(even) img { border-radius: 42px 16px 42px 16px; }
+.gallery-body { padding: 23px 24px 25px; }
+.gallery-label { color: var(--teal-dark); letter-spacing: .08em; text-transform: uppercase; font-size: .77rem; font-weight: 800; margin-bottom: 8px; }
+.gallery-body p { color: var(--muted); margin-bottom: 0; }
+.interest-tags { display: flex; flex-wrap: wrap; gap: 10px; padding-bottom: 38px; }
+.interest-tags span { background: #e4f0ec; color: var(--teal-dark); border: 1px solid #c1dcd6; border-radius: 999px; padding: 7px 15px; font-weight: 700; font-size: .9rem; }
+
+/* GOALS PAGE */
+.goal-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; margin-bottom: 46px; }
+.goal-intro-text { max-width: 580px; }
+.goal-intro-image { background: #e7f0ed; padding: 14px; border-radius: 28px; }
+.goal-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.goal-card { padding: 28px; position: relative; }
+.goal-period { display: inline-block; margin-bottom: 18px; border-radius: 100px; font-size: .8rem; text-transform: uppercase; letter-spacing: .07em; background: #f8e8de; color: #70402e; padding: 6px 12px; font-weight: 800; }
+.goal-card ul { padding-left: 20px; color: var(--muted); margin-bottom: 0; }
+.goal-card li + li { margin-top: 8px; }
+.goal-vision { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; padding-top: 54px; }
+.goal-vision .goal-intro-image { background: #f5e8db; }
+.site-footer { background: var(--navy-deep); color: #e7f1f1; padding: 36px 0; margin-top: 10px; }
+.footer-inner { display: flex; justify-content: space-between; gap: 18px; align-items: center; flex-wrap: wrap; }
+.footer-inner p { margin: 0; }
+.footer-inner a { color: #d1f3ee; text-underline-offset: 4px; }
+.footer-inner a:hover { color: white; }
+
+@media (max-width: 870px) {
+  .hero, .goal-intro, .goal-vision { grid-template-columns: 1fr; }
+  .hero { padding-block: 50px; }
+  .hero-art { max-width: 640px; }
+  .hero-photo { justify-self: center; max-width: 420px; }
+  .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .feature-grid, .goal-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .container { width: min(1120px, calc(100% - 28px)); }
+  .header-inner { flex-direction: column; padding-block: 16px; gap: 13px; }
+  .nav-list { justify-content: center; gap: 4px; }
+  .nav-list a { font-size: .9rem; padding: 8px 11px; }
+  h1 { font-size: 2.5rem; }
+  .section { padding-block: 48px; }
+  .gallery-grid, .feature-grid, .goal-grid { grid-template-columns: 1fr; }
+  .gallery-grid { gap: 18px; }
+  .page-heading { padding-block: 46px 22px; }
+  .goal-vision { gap: 24px; }
+  .quote-strip { padding: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; scroll-behavior: auto !important; }
+}

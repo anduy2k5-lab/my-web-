@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
+<defs>
+ <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#E8F4F1"/><stop offset="1" stop-color="#FBECE4"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#173548" flood-opacity=".14"/></filter>
+ <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#176C70" opacity=".12"/></pattern>
+</defs>
+<rect width="800" height="600" fill="url(#g)"/>
+<circle cx="725" cy="70" r="170" fill="#FFFFFF" opacity=".34"/>
+<circle cx="95" cy="510" r="180" fill="#FFFFFF" opacity=".24"/>
+<rect x="30" y="30" width="740" height="540" rx="38" fill="url(#dots)"/>
+
+<ellipse cx="408" cy="500" rx="280" ry="42" fill="#306775" opacity=".14"/>
+<g transform="rotate(-7 400 320)" filter="url(#shadow)">
+ <rect x="162" y="117" width="442" height="330" rx="24" fill="#fffdf8"/>
+ <rect x="194" y="154" width="16" height="262" rx="8" fill="#E0E9EB"/>
+ <path d="M236 196H543M236 245H543M236 294H543M236 343H543M236 392H509" stroke="#D9E4E5" stroke-width="3" stroke-linecap="round"/>
+ <rect x="239" y="179" width="134" height="15" rx="7" fill="#266F75" opacity=".83"/>
+ <rect x="239" y="220" width="247" height="10" rx="5" fill="#F0AA8F"/>
+ <circle cx="505" cy="336" r="55" fill="#F6E0B4"/>
+ <path d="m474 337 20 20 39-44" fill="none" stroke="#176E71" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(535 83) rotate(13)"><rect x="0" y="0" width="151" height="137" rx="15" fill="#F7BB9B" filter="url(#shadow)"/><path d="M20 34H123M20 54H104" stroke="#FFF3E8" stroke-width="9" stroke-linecap="round"/><path d="M76 90l10 19 23-43" fill="none" stroke="#185B65" stroke-width="8" stroke-linecap="round"/></g>
+<g transform="translate(75 250)"><circle cx="83" cy="102" r="62" fill="#fff" filter="url(#shadow)"/><circle cx="83" cy="102" r="38" fill="#B9D8D2"/><path d="M70 94l12 12 20-26" fill="none" stroke="#165D69" stroke-width="9" stroke-linecap="round"/></g>
+<path d="M665 376l14-35 14 35 36 13-36 14-14 35-14-35-36-14z" fill="#E2A475"/>
+
+</svg>
